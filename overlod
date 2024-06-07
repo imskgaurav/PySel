@@ -1,0 +1,44 @@
+#overridding concept in python automation framework.....
+
+class BaseTest:
+ def setup(self):
+     print("Setting up the base environment")
+
+
+
+def run_test(self):
+    self.setup()
+    print("Running the test")
+
+
+
+class APITest(BaseTest):
+      def setup(self):
+        print("Setting up the API test environment")
+
+
+class UITest(BaseTest):
+     def setup(self):
+      print("Setting up the UI test environment")
+
+# Usage
+api_test = APITest()
+api_test.run_test()
+
+# Output:
+
+# Setting up the API test environment
+
+# Running the test
+
+
+
+ui_test = UITest()
+
+ui_test.run_test()
+
+# Output:
+
+# Setting up the UI test environment
+
+# Running the test
