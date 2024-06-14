@@ -11,7 +11,8 @@ try:
    f = open("r.text","w+")
    print(type(f))
    read_content= f.read()
+   print(read_content)
 except:
     print("An error occured ")   
  #Read File 
-print(read_content)
+
