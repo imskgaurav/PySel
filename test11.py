@@ -6,3 +6,4 @@ y=x+"8"
 print(y)
 
 print(math.pi)
+print(math.sin(45))
